@@ -1,0 +1,482 @@
+exp(-10) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+
+ans =
+
+     3.315563443764691e+00
+
+exp(-10) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100)
+
+ans =
+
+     1.351017381987190e-01
+
+exp(-10) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000)
+
+ans =
+
+     1.272709315112039e-02
+
+exp(-10) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000)
+
+ans =
+
+     1.265474557770374e-03
+
+exp(-10) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000)
+
+ans =
+
+     1.264757219953672e-04
+
+exp(-10) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000)
+
+ans =
+
+     1.264662753683310e-05
+
+L = 100
+
+L =
+
+   100
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000)
+
+ans =
+
+     5.866294716938558e-07
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+
+ans =
+
+    -2.598884065309795e+09
+
+exp(-L) + cos(30)
+
+ans =
+
+     1.542514498875840e-01
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+
+ans =
+
+    -2.598884065309795e+09
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100)
+
+ans =
+
+     2.026596072924769e-03
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000)
+
+ans =
+
+     5.515710030109811e-04
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000)
+
+ans =
+
+     5.833887949197036e-05
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000)
+
+ans =
+
+     5.865466057325408e-06
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000)
+
+ans =
+
+     5.866294716938558e-07
+
+L = 1000
+
+L =
+
+        1000
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+
+ans =
+
+    -8.859815808243370e+19
+
+exp(-L) + cos(30)
+
+ans =
+
+     1.542514498875840e-01
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+
+ans =
+
+    -8.859815808243370e+19
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100)
+
+ans =
+
+    -2.644198454761683e+95
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000)
+
+ans =
+
+    -6.050605095753170e-05
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000)
+
+ans =
+
+    -5.647248582429931e-06
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000)
+
+ans =
+
+    -5.606345839792581e-07
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000)
+
+ans =
+
+    -5.626263388514019e-08
+
+L = 10000
+
+L =
+
+       10000
+
+exp(-L) + cos(30)
+
+ans =
+
+     1.542514498875840e-01
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+
+ans =
+
+    -9.880703688782323e+29
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100)
+
+ans =
+
+   -3.658687382576944e+199
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000)
+
+ans =
+
+   NaN
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000)
+
+ans =
+
+    -6.852349059005558e-07
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000)
+
+ans =
+
+    -6.806642266488083e-08
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000)
+
+ans =
+
+    -7.042933181100608e-09
+
+L = 100000
+
+L =
+
+      100000
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+
+ans =
+
+    -9.988016059391088e+39
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100)
+
+ans =
+
+   -9.047517329204188e+299
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000)
+
+ans =
+
+   NaN
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000)
+
+ans =
+
+   NaN
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000)
+
+ans =
+
+    -6.875625041535827e-09
+
+exp(-L) + cos(30) - euler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000)
+
+ans =
+
+    -9.275371026795654e-10
+
+diary off
+L = 10
+
+L =
+
+    10
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ieuler', '/Users/billywang/Desktop/math128a/PS06/ieuler.m', 15)" style="font-weight:bold">ieuler</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/PS06/ieuler.m',15,0)">line 15</a>)
+        unext = (u + h*p(0)*cos(30*tcurr) - h*sin(30*tcurr)) / (1 + h*L);
+} 
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+{Array indices must be positive integers or logical values.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ieuler', '/Users/billywang/Desktop/math128a/PS06/ieuler.m', 15)" style="font-weight:bold">ieuler</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/PS06/ieuler.m',15,0)">line 15</a>)
+        unext = (u + h*p(0)*cos(30*tcurr) - h*sin(30*tcurr)) / (1 + h*L);
+} 
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+{Undefined function or variable 'tcurr'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ieuler', '/Users/billywang/Desktop/math128a/PS06/ieuler.m', 15)" style="font-weight:bold">ieuler</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/PS06/ieuler.m',15,0)">line 15</a>)
+        unext = (u + h*p(1)*cos(30*tcurr) - h*sin(30*tcurr)) / (1 + h*L);
+} 
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+{Undefined function or variable 'L'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ieuler', '/Users/billywang/Desktop/math128a/PS06/ieuler.m', 15)" style="font-weight:bold">ieuler</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/PS06/ieuler.m',15,0)">line 15</a>)
+        unext = (u + h*p(1)*cos(30*tCurr) - h*sin(30*tCurr)) / (1 + h*L);
+} 
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+
+ans =
+
+    -1.842785701365238e+00
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100, [L])
+
+ans =
+
+    -1.695786708793333e-01
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000, [L])
+
+ans =
+
+    -1.686490272106236e-02
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000, [L])
+
+ans =
+
+    -1.685478890605219e-03
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000, [L])
+
+ans =
+
+    -1.685376215371792e-04
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000, [L])
+
+ans =
+
+    -1.685388725336523e-05
+
+L = 100
+
+L =
+
+   100
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10)
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ieuler', '/Users/billywang/Desktop/math128a/PS06/ieuler.m', 15)" style="font-weight:bold">ieuler</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/PS06/ieuler.m',15,0)">line 15</a>)
+        unext = (u + h*p(1)*cos(30*tCurr) - h*sin(30*tCurr)) / (1 + h*p(1));
+} 
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+
+ans =
+
+    -2.606112952928171e+00
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100, [L])
+
+ans =
+
+    -2.742263613616738e-01
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000, [L])
+
+ans =
+
+    -2.803177569508716e-02
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000, [L])
+
+ans =
+
+    -2.809776432048799e-03
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000, [L])
+
+ans =
+
+    -2.810440734976882e-04
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000, [L])
+
+ans =
+
+    -2.810530476823891e-05
+
+L = 1000
+
+L =
+
+        1000
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+
+ans =
+
+    -2.834705063747324e+00
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100, [L])
+
+ans =
+
+    -2.862036583422870e-01
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000, [L])
+
+ans =
+
+    -2.869670339556538e-02
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000, [L])
+
+ans =
+
+    -2.870435660894483e-03
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000, [L])
+
+ans =
+
+    -2.870511580702062e-04
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000, [L])
+
+ans =
+
+    -2.870543179825380e-05
+
+L = 10000
+
+L =
+
+       10000
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+
+ans =
+
+    -2.862176987619049e+00
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100, [L])
+
+ans =
+
+    -2.865075330415557e-01
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000, [L])
+
+ans =
+
+    -2.865842434501867e-02
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000, [L])
+
+ans =
+
+    -2.865918652509514e-03
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000, [L])
+
+ans =
+
+    -2.865925697760896e-04
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000, [L])
+
+ans =
+
+    -2.865950488215030e-05
+
+L = 100000
+
+L =
+
+      100000
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10, [L])
+
+ans =
+
+    -2.864979665807135e+00
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100, [L])
+
+ans =
+
+    -2.865271175602989e-01
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000, [L])
+
+ans =
+
+    -2.865347908556262e-02
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 10000, [L])
+
+ans =
+
+    -2.865355523218399e-03
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 100000, [L])
+
+ans =
+
+    -2.865355718545959e-04
+
+exp(-L) + cos(30) - ieuler(0,1,[2], @(t,y) (-L*(y - cos(30*t)) - 30*sin(30*t)), 1000000, [L])
+
+ans =
+
+    -2.865379831884507e-05
+
+diary off

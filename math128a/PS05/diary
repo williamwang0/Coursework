@@ -1,0 +1,367 @@
+eulertimer(1000)
+Max error over time steps: 0.8661
+
+ans =
+
+     1.999999999998181e-02
+
+eulertimer(2000)
+Max error over time steps: 0.47599
+
+ans =
+
+     2.000000000003865e-02
+
+eulertimer(3000)
+Max error over time steps: 0.32375
+
+ans =
+
+     2.000000000003865e-02
+
+eulertimer(4000)
+Max error over time steps: 0.24463
+
+ans =
+
+     3.999999999996362e-02
+
+eulertimer(5000)
+Max error over time steps: 0.19641
+
+ans =
+
+     3.999999999996362e-02
+
+eulertimer(6000)
+Max error over time steps: 0.164
+
+ans =
+
+     6.000000000000227e-02
+
+eulertimer(7000)
+Max error over time steps: 0.14074
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(8000)
+Max error over time steps: 0.12325
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(9000)
+Max error over time steps: 0.10962
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(10000)
+Max error over time steps: 0.098698
+
+ans =
+
+     6.999999999999318e-02
+
+eulertimer(11000)
+Max error over time steps: 0.089753
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(12000)
+Max error over time steps: 0.082293
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(13000)
+Max error over time steps: 0.075977
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(14000)
+Max error over time steps: 0.07056
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(15000)
+Max error over time steps: 0.065864
+
+ans =
+
+     3.999999999996362e-02
+
+eulertimer(16000)
+Max error over time steps: 0.061754
+
+ans =
+
+     4.999999999995453e-02
+euler(0,4 * pi,[512 64 8 1],@(t,w,r) [w(3), w(4), -1*w(1)/((w(1)^2) + (w(2)^2)), -1*w(2)/((w(1)^2) + (w(2)^2))], 0,1000)
+Max error over time steps: 611.3883
+
+ans =
+
+  Columns 1 through 2
+
+     6.123883085089058e+02     7.654853856361322e+01
+
+  Columns 3 through 4
+
+     7.977931682142508e+00     9.972414602678135e-01
+
+euler(0,4 * pi,[512 64 8 1],@(t,w,r) [w(3), w(4), -1*w(1)/((w(1)^2) + (w(2)^2)), -1*w(2)/((w(1)^2) + (w(2)^2))], 0,10000)
+Max error over time steps: 611.3882
+
+ans =
+
+  Columns 1 through 2
+
+     6.123881955746932e+02     7.654852444683665e+01
+
+  Columns 3 through 4
+
+     7.977933462707102e+00     9.972416828383878e-01
+
+euler(0,4 * pi,[512 64 8 1],@(t,w,r) [w(3), w(4), -1*w(1)/((w(1)^2) + (w(2)^2)), -1*w(2)/((w(1)^2) + (w(2)^2))], 0,100000)
+Max error over time steps: 611.3882
+
+ans =
+
+  Columns 1 through 2
+
+     6.123881842826789e+02     7.654852303533487e+01
+
+  Columns 3 through 4
+
+     7.977933640752759e+00     9.972417050940949e-01
+
+euler(0,4 * pi,[512 64 8 1],@(t,w,r) [w(3), w(4), -1*w(1)/((w(1)^2) + (w(2)^2)), -1*w(2)/((w(1)^2) + (w(2)^2))], 0,1000000)
+Max error over time steps: 611.3882
+
+ans =
+
+  Columns 1 through 2
+
+     6.123881831535132e+02     7.654852289418915e+01
+
+  Columns 3 through 4
+
+     7.977933658557729e+00     9.972417073197161e-01
+
+diary off
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,1000)
+Max error over time steps: 106.7026
+
+ans =
+
+  Columns 1 through 2
+
+     1.052189255262397e+01    -1.052265966543978e+02
+
+  Columns 3 through 4
+
+    -1.057253240214396e+02    -1.679080482333963e+01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,2000)
+Max error over time steps: 49.587
+
+ans =
+
+  Columns 1 through 2
+
+    -2.341938007407561e+01    -4.584824261309700e+01
+
+  Columns 3 through 4
+
+    -4.442183078668573e+01     2.081102544452048e+01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,3000)
+Max error over time steps: 42.8159
+
+ans =
+
+  Columns 1 through 2
+
+    -4.137975249478973e+01    -2.172557583013495e+01
+
+  Columns 3 through 4
+
+    -1.925544016200353e+01     4.026436731861682e+01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,4000)
+Max error over time steps: 82.2343
+
+ans =
+
+  Columns 1 through 2
+
+    -8.244625714158386e+01    -3.258893360023003e+01
+
+  Columns 3 through 4
+
+    -2.761938722490694e+01     8.081238656240852e+01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,5000)
+Max error over time steps: 271.4475
+
+ans =
+
+  Columns 1 through 2
+
+    -2.424578006196213e+02    -1.691295024673601e+02
+
+  Columns 3 through 4
+
+    -1.544476058727464e+02     2.331798407534149e+02
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,20000)
+Max error over time steps: 4.0257
+
+ans =
+
+  Columns 1 through 2
+
+     3.997186045197733e-01     2.522998493506851e+00
+
+  Columns 3 through 4
+
+     2.761049380380465e+00    -6.019765375596542e-01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,50000)
+Max error over time steps: 3.0016
+
+ans =
+
+  Columns 1 through 2
+
+     8.997139700641387e-01     6.711548709570363e-01
+
+  Columns 3 through 4
+
+     6.001031079454997e-01    -1.122537987314529e-01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,75000)
+Max error over time steps: 3.0016
+
+ans =
+
+  Columns 1 through 2
+
+     9.143661629378346e-01     5.777724330878958e-01
+
+  Columns 3 through 4
+
+     7.145361661924510e-01    -2.537816471537478e-01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,100000)
+Max error over time steps: 3.0016
+
+ans =
+
+  Columns 1 through 2
+
+     9.260572178589652e-01     5.110934604237509e-01
+
+  Columns 3 through 4
+
+     6.677770532131945e-01    -2.707218207111333e-01
+
+euler(0,17.06521656015796,[0.994 0 0 -2.00158510637908],@(t,u,r) satellite(t,u,r), 0,1024000)
+Max error over time steps: 3.0016
+
+ans =
+
+  Columns 1 through 2
+
+     9.912419954134595e-01     4.884884812990736e-01
+
+  Columns 3 through 4
+
+     9.241424758454164e-02    -3.666375577836178e-01
+
+eulertimer(1000)
+Max error over time steps: 106.7026
+
+ans =
+
+  Columns 1 through 2
+
+     1.052189255262397e+01    -1.052265966543978e+02
+
+  Columns 3 through 4
+
+    -1.057253240214396e+02    -1.679080482333963e+01
+
+
+ans =
+
+     5.000000000001137e-02
+
+eulertimer(10000)
+Max error over time steps: 49.545
+
+ans =
+
+  Columns 1 through 2
+
+     4.279798489098799e+01     3.163480974100889e+01
+
+  Columns 3 through 4
+
+     2.905762290238256e+01    -4.104483632710801e+01
+
+
+ans =
+
+     8.000000000001251e-02
+
+eulertimer(100000)
+Max error over time steps: 3.0016
+
+ans =
+
+  Columns 1 through 2
+
+     9.260572178589652e-01     5.110934604237509e-01
+
+  Columns 3 through 4
+
+     6.677770532131945e-01    -2.707218207111333e-01
+
+
+ans =
+
+     9.999999999999432e-02
+
+eulertimer(1024000)
+Max error over time steps: 3.0016
+
+ans =
+
+  Columns 1 through 2
+
+     9.912419954134595e-01     4.884884812990736e-01
+
+  Columns 3 through 4
+
+     9.241424758454164e-02    -3.666375577836178e-01
+
+
+ans =
+
+     8.499999999999943e-01
+
+diary off

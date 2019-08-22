@@ -1,0 +1,5144 @@
+newton(2, a, 0, 0)
+
+numCorrectBits =
+
+     -8.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     -1.600000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -42
+
+
+numCorrectBits =
+
+   -33
+
+
+numCorrectBits =
+
+   -33
+
+
+ans =
+
+     1.895494267033981e+00     4.000000000000000e+00
+
+x = fsolve(@(t) 2*sin(t) - t,2) - newton(2, a, 0, 0)
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',4.695490e-10,'default',1.000000e-06,8.216939e-20,'default',1.000000e-03,8.216939e-20,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+numCorrectBits =
+
+     -8.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     -1.600000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -42
+
+
+numCorrectBits =
+
+   -33
+
+
+numCorrectBits =
+
+   -33
+
+
+x =
+
+     1.749964617658861e-10    -2.104505732791023e+00
+
+x / fsolve(@(t) 2*sin(t) - t,2)
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',4.695490e-10,'default',1.000000e-06,8.216939e-20,'default',1.000000e-03,8.216939e-20,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+ans =
+
+     9.232233765790274e-11    -1.110267527155228e+00
+
+newton(2, b, 0, 0)
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+    -4
+
+
+numCorrectBits =
+
+   -12
+
+
+numCorrectBits =
+
+   -27
+
+
+numCorrectBits =
+
+     -3.100000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     -3.100000000000000e+01 + 4.000000000000000e+00i
+
+
+ans =
+
+     6.305395279271693e+00     5.000000000000000e+00
+
+x = fsolve(@(t) 1/t + log(t) - 2,2) - newton(2, b, 0, 0)
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',1.606616e-11,'default',1.000000e-06,1.449566e-20,'default',1.000000e-03,1.449566e-20,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+    -4
+
+
+numCorrectBits =
+
+   -12
+
+
+numCorrectBits =
+
+   -27
+
+
+numCorrectBits =
+
+     -3.100000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     -3.100000000000000e+01 + 4.000000000000000e+00i
+
+
+x =
+
+    -9.022489422250146e-10     1.305395278369444e+00
+
+x / fsolve(@(t) 1/t + log(t) - 2,2)
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',1.606616e-11,'default',1.000000e-06,1.449566e-20,'default',1.000000e-03,1.449566e-20,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+ans =
+
+    -1.430915751341022e-10     2.070283020713358e-01
+
+newton(0.3, b, 0, 0)
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+ans =
+
+     3.178444328993727e-01     4.000000000000000e+00
+
+x = fsolve(@(t) 1/t + log(t) - 2,0.3) - newton(0.3, b, 0, 0)
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',5.720135e-09,'default',1.000000e-06,7.176359e-19,'default',1.000000e-03,7.176359e-19,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+numCorrectBits =
+
+     2
+
+
+x =
+
+    -1.254578663179018e-10    -3.682155567226085e+00
+
+x / fsolve(@(t) 1/t + log(t) - 2, 0.3)
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved','CSHelpWindow');">Equation solved</a>.
+
+fsolve completed because the vector of function values is near zero
+as measured by the default value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>, and
+the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'appears_regular','CSHelpWindow');">problem appears regular</a> as measured by the gradient.
+
+<<a href = "matlab: createExitMsg('trustnleqn',1.000000e+00,true,true,'fsolve',5.720135e-09,'default',1.000000e-06,7.176359e-19,'default',1.000000e-03,7.176359e-19,'default',1.000000e-03);">stopping criteria details</a>>
+
+
+ans =
+
+    -3.947146886387056e-10    -1.158477288744972e+01
+
+newton(eps, c, 0, 0)
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+ans =
+
+     1.094764425253764e-47     2.660000000000000e+02
+
+x = eps^3 - newton(eps, c, 0, 0)
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+    -5
+
+
+x =
+
+    -2.430865342914508e-63    -2.660000000000000e+02
+
+x / eps^3
+
+ans =
+
+    -2.220446049250313e-16    -2.429746472062626e+49
+
+newton(eps, d, 0, 0)
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+ans =
+
+     4.930380657631324e-32     1.000000000000000e+00
+
+newton(1, d, 0, 0)
+
+numCorrectBits =
+
+    -1
+
+
+numCorrectBits =
+
+     -4.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -10
+
+
+numCorrectBits =
+
+   -47
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+ans =
+
+     4.930380657631324e-32     6.000000000000000e+00
+
+newton(2, d, 0, 0)
+
+numCorrectBits =
+
+     1
+
+
+numCorrectBits =
+
+      3.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     8
+
+
+numCorrectBits =
+
+      1.600000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    34
+
+
+numCorrectBits =
+
+      6.900000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   139
+
+
+numCorrectBits =
+
+      2.800000000000000e+02 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   560
+
+
+numCorrectBits =
+
+                        Inf + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2018b.app/toolbox/optim/optim/fsolve.m', 408)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2018b.app/toolbox/optim/optim/fsolve.m',408,0)">line 408</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 8)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',8,0)">line 8</a>)
+numCorrectBits = floor(log2(fsolve(func, 2, options) -
+temp))
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+} 
+newton(1.39, d, 0, 0)
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+     -1.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    -2
+
+
+numCorrectBits =
+
+     -5.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -14
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+ans =
+
+     4.930380657631324e-32     1.200000000000000e+01
+
+newton(1.3917, d, 0, 0)
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+     -1.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    -2
+
+
+numCorrectBits =
+
+     -6.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -18
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+ans =
+
+     4.930380657631324e-32     1.500000000000000e+01
+
+newton(-1.3918, d, 0, 0)
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     1
+
+
+numCorrectBits =
+
+      2.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     5
+
+
+numCorrectBits =
+
+      1.200000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    25
+
+
+numCorrectBits =
+
+      5.100000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   103
+
+
+numCorrectBits =
+
+      2.080000000000000e+02 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   417
+
+
+numCorrectBits =
+
+      8.350000000000000e+02 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   Inf
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimset', '/Applications/MATLAB_R2018b.app/toolbox/matlab/optimfun/optimset.m', 134)" style="font-weight:bold">optimset</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2018b.app/toolbox/matlab/optimfun/optimset.m',134,0)">line 134</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 3)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',3,0)">line 3</a>)
+options = optimset('Display','off');
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+} 
+newton(0, d, 0, 0)
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+ans =
+
+     4.930380657631324e-32     1.000000000000000e+00
+
+newton(-1.39, d, 0, 0)
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    -1
+
+
+numCorrectBits =
+
+     -2.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    -5
+
+
+numCorrectBits =
+
+     -1.400000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+ans =
+
+     4.930380657631324e-32     1.200000000000000e+01
+
+newton(-1.3917, d, 0, 0)
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    -1
+
+
+numCorrectBits =
+
+     -2.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    -6
+
+
+numCorrectBits =
+
+     -1.800000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+ans =
+
+     4.930380657631324e-32     1.500000000000000e+01
+
+newton(-1.3918, d, 0, 0)
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     0
+
+
+numCorrectBits =
+
+      0.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     1
+
+
+numCorrectBits =
+
+      2.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+     5
+
+
+numCorrectBits =
+
+      1.200000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+    25
+
+
+numCorrectBits =
+
+      5.100000000000000e+01 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   103
+
+
+numCorrectBits =
+
+      2.080000000000000e+02 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   417
+
+
+numCorrectBits =
+
+      8.350000000000000e+02 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   Inf
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+
+numCorrectBits =
+
+   NaN
+
+{Operation terminated by user during
+<a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimget>optimgetfast', '/Applications/MATLAB_R2018b.app/toolbox/matlab/optimfun/optimget.m', 132)" style="font-weight:bold">optimget>optimgetfast</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2018b.app/toolbox/matlab/optimfun/optimget.m',132,0)">line 132</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('optimget', '/Applications/MATLAB_R2018b.app/toolbox/matlab/optimfun/optimget.m', 31)" style="font-weight:bold">optimget</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2018b.app/toolbox/matlab/optimfun/optimget.m',31,0)">line 31</a>)
+    o = optimgetfast(options,name,default);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fsolve', '/Applications/MATLAB_R2018b.app/toolbox/optim/optim/fsolve.m', 227)" style="font-weight:bold">fsolve</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2018b.app/toolbox/optim/optim/fsolve.m',227,0)">line 227</a>)
+mtxmpy =
+optimget(options,'JacobMult',defaultopt,'fast',allDefaultOpts);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 8)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',8,0)">line 8</a>)
+numCorrectBits = floor(log2(fsolve(func, 2, options) -
+temp))
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('newton', '/Users/billywang/Desktop/math128a/hw2/newton.m', 20)" style="font-weight:bold">newton</a> (<a href="matlab: opentoline('/Users/billywang/Desktop/math128a/hw2/newton.m',20,0)">line 20</a>)
+    r = newton(temp, f, p, n+1);
+} 
+x = eps^2 - newton(1, d, 0, 0)
+
+numCorrectBits =
+
+    -1
+
+
+numCorrectBits =
+
+     -4.000000000000000e+00 + 4.000000000000000e+00i
+
+
+numCorrectBits =
+
+   -10
+
+
+numCorrectBits =
+
+   -47
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+numCorrectBits =
+
+   -31
+
+
+x =
+
+     0    -6
+
+diary off
