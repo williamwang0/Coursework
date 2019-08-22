@@ -1,0 +1,42 @@
+Q: Can you think of an analogy between the process of tesselating hexagons and randomly generating a world using rooms and hallways? 
+What is the hexagon and what is the tesselation on the Project 3 side?
+
+A: Hexagons are like rooms and hallways; tesselating them is like arranging them in the world.
+
+-----
+Q: If you were to start working on world generation, what kind of method would you think of writing first? 
+Think back to the lab and the process used to eventually get to tesselating hexagons.
+
+A: I would generate different rooms/hallways randomly and arrange them in a predetermined order.
+
+-----
+Q: What distinguishes a hallway from a room? How are they similar?
+
+A: Hallways have dimension 1 x n; rooms have dimension (> 1) x (> 1). They are both open spaces containing floor tiles,
+surrounded by wall tiles.
+
+-----
+Q: For tesselating hexagons, one of the hardest parts is figuring out where to place each hexagon/how to easily place hexagons on screen in an algorithmic way. 
+After looking at your own implemention, consider the implementation provided near the end of the lab. 
+How did your implementation differ from the given one? What lessons can be learned from it?
+
+A: It was very similar, but instead of writing methods to find neighbor hexagons' locations, I embedded coordinate
+calculations within my for loop (a little less abstraction).
+
+-----
+Q: Consider an algorithm for placing rooms and hallways on your map. 
+Ideally, consider many algorithms and think about what makes some easier or harder to implement. Try and bring those ideas together into a single simple algorithm which accomplishes the task. 
+In general, algorithms with as few edge cases as possible are better algorithms.
+
+A: 1) Start with a single room of random size and position: the beginning "current" room.
+2) Choose a random number of rooms that the final world will have.
+3) Repeat the following steps in a "breadth-first" room creation procedure until the chosen number of rooms have been created:
+a) From the "current" room, choose a number of outgoing hallways randomly, between 0 and 4 (assuming that a wall can only
+have a single hallway). *In the beginning, there must be at least 1 outgoing hallway.
+b) Choose the position along the wall and length of each hallway randomly; set hallways down. If a hallway gets too close
+to another hallway, room, or world edge, it automatically becomes a dead end. Hallway lengths are approx. geometrically distributed.
+c) Among newly-set hallways, choose some of them to become dead ends randomly.
+d) Among non-ended hallways, create either a room or a perpendicular hallway (higher chance for room) at the end.
+If a perpendicular hallway is chosen, for both ends, repeat c)-d).
+e) Add each room to the global room queue as it is created; get the next "current" room by popping from the queue to
+create a "breadth-first" creation procedure.
