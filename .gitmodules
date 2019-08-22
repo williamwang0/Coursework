@@ -1,0 +1,3 @@
+[submodule "cs61b/main"]
+	path = cs61b/main
+	url = https://github.com/Berkeley-CS61B-Student/sp19-s415.git
