@@ -1,0 +1,168 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70}}
+\author{\large Taught by Hulett, Yang\\
+Homework 2 by William Wang}
+\date{July 1, 2019}
+
+\begin{document}
+
+\maketitle
+\newpage
+Sundry: I worked on this homework by myself.\\
+\begin{enumerate}
+    \item
+        \begin{enumerate}
+            \item The resulting graph will have 3 connected components. Since there are no cycles in a tree, removing the degree 3 node guarantees that the 3 vertices it was connected to will \textit{not} be connected, and thus there will be 3 connected components.
+            
+            \item By definition, a tree must satisfy the following property: $e = v-1$. Before addition and subtraction of edges, the $n$-vertex tree must have $n-1$ edges. There is a way to solve this question using this property, but instead I will analyze how additions and removal of edges affect the overall tree structure:
+                \begin{itemize}
+                    \item Addition of Edge: Since additions occur first and the structure is a tree (1 connected component), all 10 additions of edges will result in 1 connected component with cycles. Furthermore, each addition of an edge is guaranteed to increase the number of cycles by 1 because there is a fixed number of vertices. In conclusion, after 10 additions, there are 10 cycles and 1 connected component.
+                    \item Removal of an edge: There are 2 cases.
+                        \begin{itemize}
+                            \item Case 1: Remove an edge in a cycle. In this case, the number of connected components remains the same. The number of cycles decreases by 1.
+                            \item Case 2: Remove a "branch". We define a branch as any edge that is not part of a cycle. In this case, the number of connect components increases by one and the number of cycles remains the same.
+                        \end{itemize}
+                \end{itemize}
+            For there to be 3 connected components after addition and removal of branches, we have that there must be 3 removals of "branches" and 2 removals of cycles. This implies that there are $10 - 2 = 8$ remaining cycles in the graph. To remove these cycles, at least 8 removals must be made.
+            
+            \item An $n$-dimensional hypercube has $n2\textsuperscript{n-1}$ edges. A $K_n$ graph has $1 + 2 + 3 + ... + n-1 = \frac{(n)(n-1)}{2}$ edges. For $n = 3: 3(2^2) = 12 > \frac{(3)(2)}{2} = 3$. The claim is false for n = 3 and is thus false. In fact, since $O(2^n) > O(n^2)$, the claim is false for all $n \geq 3$.
+            
+            \item By definition, a Hamiltonian cycle must cover every vertex in the graph exactly one time. A Hamiltonian cycle in an $n$-vertex graph must cover exactly $n$ edges. Assuming all the edges in a complete $n$-vertex graph can by spanned in $x$ Hamiltonian cycles, we have that $x = |E|/n$. The number of vertices in a complete $n$-vertex graph = $\frac{(n)(n-1)}{2}$. Thus, $x = \frac{(n)(n-1)}{2n} = \frac{n-1}{2}$.
+            
+            \item According to the result from part (d), there are 2 paths required. Indeed:
+                \begin{itemize}
+                    \item Path 1: $\{(0,2), (2,4), (4,1), (1,3), (3,0)\}$
+                    \item Path 2: $\{(0,1), (1,2), (2,3), (3,4), (4,0)\}$
+                \end{itemize}
+        \end{enumerate}
+        
+    \item We proceed with a direct proof.\\
+    Let's first examine what it means for a graph to have no tours of odd length. By definition, this means that it is \textit{impossible} to start at a node $n_0$ and return to it in an odd number of steps. In other words, for any node $n_k$ where $k = 2m$ for $m \in \N$, there is no path from $n_k$ to $n_0$. Since $n_0$ is an arbitrary node, we can prove the claim by examining the cases for when our starting node is $n_2, n_4, ...$ From all these cases, we get that none of the even numbered nodes are connected to each other. Clearly, the same conclusion can be made about the odd numbered nodes. Thus, we get that the graph can be separated into the even numbered nodes and odd numbered nodes such that the nodes in each set are not connected with any other nodes in its own set: it is bipartite. \qed
+
+    \item 
+        \begin{enumerate}
+            \item 
+            From Euler's formula, we get that $v + f = e + 2$. Since the graph is triangulated, we have $f = \frac{2e}{3}$. Plugging in for $f$ and solving for $e$, we find that $e = 3v - 6$. Since each edge is counted twice we get:
+                \begin{align*}
+                    \sum{degree(v)} = \sum_{k = 0}^{n}{degree(v_k)} = 2e = 6v - 12
+                \end{align*}
+            Then, the sum of the charges is:
+                \begin{align*}
+                    6v - \sum{degree(v)} = 6v - 2e = 12
+                \end{align*}
+            
+            \item
+            The charge is equal to $6 - degree(v)$.
+                \begin{itemize}
+                    \item Degree 5 vertex: Charge = 6 - 5 = 1.
+                    \item Degree 6 vertex: Charge = 6 - 6 = 0.
+                \end{itemize}
+            
+            \item 
+            The assumption ``there must exist a degree 5 vertex with positive charge after discharging all degree 5 vertices'' essentially states that a degree 5 vertex cannot be connect with 5 vertices that are all degree 7 or higher. This assumption can be quickly verified using a result of Euler's formula: $e \leq 3v - 6$. If this structure existed, we get:
+            \begin{align*}
+                \frac{(7)(5) + 5}{2} &\leq 3(6) - 6\\
+                20 &\leq 12
+            \end{align*}
+            Clearly since this not true, so the assumption is true. This implies that a degree 5 vertex must be connected with a vertex that has a degree of at most 6. The proof is true with this assumption.
+            
+            \item If there are no degree 5 vertices with positive charge after discharging the degree 5 vertices, this means that the total charge of 12 must come from other vertices. Any vertices with degree 1, 2, 3, 4, and 7 will still have a positive charge after discharging the degree 5 vertices.
+            
+            \item For a degree 7 vertex to have a positive charge after discharging the degree 5 vertices, it must gain enough charge to offset its initial charge of -1. Therefore, it must be connected to at least 6 degree 5 vertices.
+            
+            \item If the graph is triangulated then there must be 3 edges around every face. For this to be true, there are 2 cases:
+            \begin{itemize}
+                \item Case 1: 2 of the degree 5 vertices are connected, forming a face bound by 2 degree 5 vertices and the degree 7 vertex
+                \item Case 2: Every degree 5 vertex is connected to a vertex that is connected to the degree 7 vertex and not degree 5.
+            \end{itemize}
+            Since there are at least 6 degree 5 vertices connected to the degree 7 vertex, we have that there is at most 1 vertex connected to the degree 7 vertex that is not degree 5. Thus, there must be at least 2 degree 5 vertices that are connected.
+            
+            \item From part (a), we have that any triangulated graph has a total charge of 12. Since the sum of all charges is positive, we have that there must be at least one vertex with degree 5 or less. If a vertex has a degree less than 5, then the (1) is satisfied and the claim is true. If there is only vertices with degree 5 and higher, then there are 2 cases:
+                \begin{itemize}
+                    \item Case 1: Discharging results in a vertex of degree 5 that has a positive remaining charge. In this case, the statement is true from the result obtained in part (c).
+                    \item Case 2: Discharging results in no vertices of degree 5 with a positive charge. In this case, the statement is true from the result obtained in parts (d) and (f).
+                \end{itemize}
+            The claim is true in all possible cases. \qed
+        \end{enumerate}
+        
+        \item
+            \begin{enumerate}
+                \item $13\textsuperscript{2018} \equiv 1\textsuperscript{2018} \equiv 1$ (mod 12)
+                
+                \item $8\textsuperscript{11111} \equiv -1\textsuperscript{11111} \equiv -1$ (mod 9)
+                
+                \item 7\textsuperscript{256} = 7\textsuperscript{250} * $7^6$\\
+                By Fermat's Little Theorem, we have $7\textsuperscript{250} \equiv 1$ (mod 11)\\
+                $7\textsuperscript{256} \equiv 7^6 \equiv 5^3 \equiv 3$ (mod 11)
+                
+                \item 3\textsuperscript{160} = 3\textsuperscript{154} * $3^6$\\
+                By Fermat's Little Theorem, we have $3\textsuperscript{154} \equiv 1$ (mod 23)\\
+                $3\textsuperscript{160} \equiv 3^6 \equiv 4^2 \equiv 16$ (mod 23)
+            \end{enumerate}
+        
+        \item
+            \begin{enumerate}
+                \item $\phi(p) = p-1$ for $p$ being prime.
+                \item $\phi(p^k) = p^k * (1-\frac{1}{p}) = p\textsuperscript{k-1}(p-1)$
+                \item If $a < p$ and a is a positive integer, then $a$ is relatively prime to $p$. Then, by Euler's Theorem, $a$\textsuperscript{\phi(p)} $\equiv 1$ (mod $p$)\\
+                Note: Fermat's Little Theorem can also be used since $\phi(p)$ is simply $p-1$ for prime number $p$, however Fermat's Little Theorem is just a specific case of Euler's Theorem
+                \item Note: $\phi(b) = \phi(p_i^\alpha) * \phi(p/p_i^\alpha)$\\
+                Then, $a$\textsuperscript{\phi(b)} $\equiv (a$\textsuperscript{\phi(p_i^\alpha)}$)$ $\textsuperscript{\phi(p/p_i^\alpha)}$ (mod $p_i$)\\
+                Clearly, $\phi(p_i^\alpha) = k * \phi(p_i)$ for some $k$\\ 
+                $a$\textsuperscript{\phi(b)} $\equiv (a$\textsuperscript{\phi(p_i^\alpha)}$)$ $\textsuperscript{\phi(p/p_i^\alpha)}$ $\equiv 1$\textsuperscript{\phi(p/p_i^\alpha)} $\equiv$ 1 (mod $p_i$)
+            \end{enumerate}
+        
+        \item
+            By the multiplicative property of totients, we have that $\phi(pq) = \phi(p) * \phi(q) = (p-1)(q-1)$ since $p$ and $q$ are both primes.\\
+            By Euler's Theorem, since a is relatively prime to pq:
+            \begin{align*}
+                a^{\phi(pq)} &\equiv 1 \text{ (mod }pq)\\
+                a^{\phi(pq)} * a &\equiv a \text{ (mod }pq)\\
+                a^{(p-1)(q-1) + 1} &\equiv a \text{ (mod }pq)
+            \end{align*}
+\end{enumerate}
+
+\end{document}

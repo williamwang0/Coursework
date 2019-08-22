@@ -1,0 +1,103 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70}}
+\author{\large Taught by Hulett, Yang\\
+Homework 4 by William Wang}
+\date{July 21, 2019}
+
+\begin{document}
+
+\maketitle
+\newpage
+Sundry: I worked on this homework by myself.\\
+\begin{enumerate}
+    \item
+        \begin{enumerate}
+            \item There's clearly a number that cannot be described with 100 characters since 100 characters gives a finite bound. There are only 67 characters in the sentence, which means that it is not the smallest positive integer not definable in under 100 character, but it also is.
+            \item For any n-bit string, there are $2^n$ possible representations. For unique numbers, there are only $2^n - 1$ many choices to compress it to, which means that there must be one that cannot be compressed.
+            \item P takes in n, converts it into an integer using a while look and repeatedly dividing by powers of 2. Feed the bit string into K and keep track of the complexity. If the complexity is greater than the previous max, then replace the current max. If equal do nothing. Return max.
+            \item There is at least 1 incompressible string for every value $\leq n$. This incompressible string has a complexity $\geq n$. If $n > m$ then the incompressible string must be also greater than m and cannot be represented in m bits.
+        \end{enumerate}
+    \item 
+        \begin{enumerate}
+            \item 8!
+            \item $3^8 * 8!$
+            \item $3^8 * 8! / 3 = 3^7 * 8!$
+            \item part c divided by 6 different top faces and 4 rotations that lead to the same orientations = $3^7 * 8!/(6*4)$
+            \item valid corner positioning stays the same, while there are $12! * 2^12$ new possible orientations per orientation of corner pieces = $3^12 * 3^8 * 12! * 8!$
+        \end{enumerate}
+    \item  
+        \begin{enumerate}
+            \item treat "COME" as a single 'letter'. Then there are 4! ways to contain a substring of "COME". For a subsequence, fix the other letters in position and for any choice of putting the letters of "COME" into the sequence, there is only 1 that results in a valid subsequence. Then there are ${7 \choose 4}$ ways to put "COME" in, and 3! ways to rearrange "S, T, U". So there are ${7 \choose 4} * 3!$ choices.
+            \item 50 for 2, 33 for 3, 20 for 5\\
+            16 for 6, 10 for 10, 6 for 15\\
+            3 for 30\\
+            Total = (50 + 33 + 20) - (16 + 10 + 6) + 3 = 74
+            \item fix $x_0. x_0$ must be between 0 and 90. There are $46 \choose 3$ ways to choose $x_1 - x_4$ for $x_0  = 0$. There are $45 \choose 3$ ways to choose for $x_0 = 5$... There are a total of ${3 \choose 3} + {4\choose 3} + ... + {46 \choose 3}$ ways = ${47 \choose 4}$.
+            \item For any choice of numbers, there is only 1 valid orientation. Then we have 7 items and 9 dividers where each 'slot' is a different number between 0 and 9 = ${16 \choose 9}$. 
+        \end{enumerate}
+    \item
+        \begin{enumerate}
+            \item ${n \choose k}$
+            \item $x^k * y^{n-k}$
+            \item ${n \choose k} * [x^k * y^{n-k} - (kx + (n-k)y)]$
+            \item The total profit of making every unique keychain of exactly $k$ blue beads is equal to the cost of making it raised to the $n$ power???
+        \end{enumerate}
+    \item
+        \begin{enumerate}
+            \item $[18! / (6! * 8! * 3!)] / [22! / (5! * 8! * 6! * 3!)] = 1/1463$
+            \item $2^8 / 3^8$
+            \item $15^5 / 20^ 5$
+        \end{enumerate}
+    \item
+        Yes. By the same logic as the Monty Hall Problem, there's a lower chance that my friend shoots a bullet if I respin the revolver.
+    \item
+        \begin{enumerate}
+            \item $2^n$
+            \item $1/(2^n)$
+            \item Probability = ${n \choose k} * 1/k - {n \choose k+1} * 1/(k+1) + ...$ For $k \geq 4logn + 1$, each negative term can at least cancel out the positive term? resulting in a final term of 1/n??
+        \end{enumerate}
+\end{enumerate}
+\end{document}

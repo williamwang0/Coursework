@@ -1,0 +1,71 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70 sp19}}
+\author{\large Taught by Rao, Ayazifar\\
+Discussion 00b by William Wang}
+\date{June 3, 2019}
+
+\begin{document}
+
+\maketitle
+\begin{enumerate}
+    \item We proceed by contraposition. Assume that there exists $a, b, c, d$ such that $a \geq c$ and $b \geq d$. Clearly, $a + b \geq c + d$. \qed
+    \item For n to be odd, m must also be odd. In other words, $m = 2x + 1$ for $x \in \N$. Thus, $n = m^2 = (2x + 1)^2 = 4x^2 + 4x + 1 = 4x(x + 1) + 1$. Clearly, either $x$ or $x + 1$ is even, so we can express $x(x + 1)$ as $2k$ for $k \in \Z$. Thus, $n = 8k + 1$, which is what we desired to prove. \qed
+    \item We proceed by contradiction. Assume that each person at the party has a unique number of friends. Clearly it is impossible for anyone at the party to have greater than $n-1$ friendships. Thus, in order to each person to have a unique number of friends, the number of friendships must be described by the following set: $\{0, 1, 2, ..., n-2, n-1\}$. This might seem possible at first, however upon further inspection, we see that the individual with $n-1$ friends must be friends with \textit{everyone} else at the party. Since there is an individual at this party with 0 friends, and friendships are pairwise, we can conclude this is impossible. \qed
+    \item We proceed by contradiction. Assume that $2^\frac{1}{n}$ is rational for an integer $n \geq 3$. Then, by definition, $2^\frac{1}{n} = \frac{x}{y}$ for $x, y \in \Z$. Raising both sides of the equation to the $n\textsuperscript{th}$ power, we have: $2y^n = x^n$. Expanding, we get $y^n + y^n = x^n$, which is impossible for $n \geq 3$ according to Fermat's Last Theorem. \qed
+    \item We proceed by cases. By the definition of a prime number, $m$ cannot be divisible by 2 or 3. Assume there exists a prime number $l > 3$ such that $l$ is not in the form $6k + 1$ or $6k - 1$. Then, $l$ must be one of the following:
+    \begin{enumerate}
+        \item Case 1: $6k + 2 = 2(3k + 1)$
+        \item Case 2: $6k + 3 = 3(2k + 1)$
+        \item Case 3: $6k + 4 = 2(3k + 2)$
+    \end{enumerate}
+    Note that $6k + 5$ is equivalent to $6(k + 1) - 1$.\\
+    In case 1 and case 3, $l$ is divisible by 2. In case 2, $l$ is divisible by 3. Therefore $m$ must be in the form $6k + 1$ or $6k - 1$. \qed
+\end{enumerate}
+\newpage
+
+
+\end{document}

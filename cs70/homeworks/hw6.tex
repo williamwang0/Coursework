@@ -1,0 +1,113 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70}}
+\author{\large Taught by Hulett, Yang\\
+Homework 5 by William Wang}
+\date{July 29, 2019}
+
+\begin{document}
+
+\maketitle
+\newpage
+Sundry: I worked on this homework by myself.\\
+\begin{enumerate}
+    \item This problem can be modeled with $X_i = Geom(\frac{n - (i-1)}{n})$. To find the expected value of the number of houses that must be visited, we have: 
+        \begin{align*}
+            X &= X_1 + X_2 + ...\\
+            \E[X] &= \E[X_1 + X_2 + ...]\\
+            \E[X] &= n\sum_{i=1}^{n}{\frac{1}{i}} \\
+            \E[X] &= nln(n)
+        \end{align*}
+    \item This problem is similar to problem 1. The problem can be modeled with $T_i = Geom(\frac{n-(i-1)}{n})$ where $2 \leq i \leq n$. Then, the expected value of the $T$, where $T = T_2 + T_3 + ... + T_n$, is as follows:
+        \begin{align*}
+            \E[T] &= \E[T_1 + T_2 + ...]\\
+            \E[T] &= n\sum_{i=1}^{n-1}{\frac{1}{i}}\\
+            \E[T] &= nln(n) - 1
+        \end{align*}
+    \item 
+        \begin{enumerate}
+            \item Let $X = X_1, X_2, ..., X_{13}$ where $X_i$ = is the distribution for the corresponding card with value $i$ being represented in the 5 card hand. This can be modeled with throwing 5 balls in 13 bins. From the results drawn in lecture, we have $\E[X] = \frac{5}{13}$ for the expected number of balls in any bin. Let $Y_{13} = Y_1 + ... + Y_{13}$ where $Y_i = \P[filled]$. Then $\E[Y_{13}] = 13(\frac{5}{13})^{13}$??
+            \item $Var(x) = \E[X^2] - (\E[X])^2$. We have that $X$ was $\frac{5/13}$, so $\E[X^2] = 13(\frac{5}{13})^{2*13}$?? This part uses conclusions drawn from part a to obtain the variance and I was unable to completely solve part a.
+        \end{enumerate}
+    \item Let $X = X_1 + ... + X_m$ where $X_i = 1$ if the bin$_i$ has exactly 1 ball. Then:
+        \begin{align*}
+            \E[X] &= \E[X_1 +] + \E[X_2] + ... \E[X_m]\\
+            &= p + p + ... + p\\
+            &= mp
+        \end{align*}
+    where $p = n(\frac{1}{m})(\frac{m-1}{m})^{n-1}$. Thus, $\E[X] = n(\frac{m-1}{m})^{n-1}$. Then, $Var(x) = \E[X^2] - (\E[X])^2$. 
+    \item 
+        \begin{enumerate}
+            \item
+                We proceed with the Chebyshev Inequality. Given the standard deviation = \$500, we have the variance = $500^2 = 250000$. Then:
+                    \begin{align*}
+                        \P[|X-\mu| \geq 1500] \leq \frac{250000}{2250000}
+                    \end{align*}
+                I got stuck. I think my problem has to do with an incorrect c value since I didn't factor in 12 months/year, but I am not sure how I would integrate that.
+            \item
+                This problem can be modeled with a binomial distribution with $n = 10$ and $p$. The expected value of the revenue is $(np * 100,000) - (n(1-p) * (-50,000))$ We use the Markov Inequality to obtain $\P[X \geq 0] \leq \frac{\E[X]}{0}$??
+                Not sure how to handle division by 0...
+            \item
+                The expected value for a binomial distribution is $np$. Using the Markov inequality, we have $\P[X \geq 1000] \leq \frac{\E[X]}{1000}$ We can model the problem as a binomial distribution with $n = 1000 + k$ and $p = 1-0.8 = 0.2$. Then we have:
+                    \begin{align*}
+                        \P[X \geq 1000] &\leq \frac{\E[X]}{1000}\\
+                        \P[X \geq 1000] &\leq \frac{(1000 + k)(0.2)}{1000}
+                    \end{align*}
+                Since we want to be 99\% confident that we have received at least 1000 packets, $\P[X \geq 1000] = 0.99$. Then:
+                    \begin{align*}
+                        0.99 &\leq \frac{(1000 + k)(0.2)}{1000}\\
+                        990 &\leq (1000 + k)(0.2)\\
+                        k &\geq 3950
+                    \end{align*}
+        \end{enumerate}
+    \item 
+        \begin{enumerate}
+            \item Yes, because for the LLN to hold, each must be independent of each other. i.e. they must be sent through separate channels.
+            \item Yes, because since n is very large, n/2 pairs being sent is effectively identical to sending n packets on different channels. The problem then reduces to part a.
+            \item No, since the number of different routes being used is not dependent on n, there is not a large enough numbers of independent distributions. 
+            \item No, the same problem that occurs in part (c) occurs in this problem as well. 
+        \end{enumerate}
+\end{enumerate}
+\end{document}

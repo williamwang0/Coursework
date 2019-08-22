@@ -1,0 +1,177 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70}}
+\author{\large Taught by Hulett, Yang\\
+Homework 1 by William Wang}
+\date{June 24, 2019}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+Sundry: I worked on this homework by myself.
+\begin{enumerate}
+    \item 
+        \begin{enumerate}
+            \item $(\forall x \in \Z)(x < 0 \implies x^3 < 0)$\\
+            Negation: $(\forall x \in \Z)(x < 0 \implies x^3 \geq 0)$
+            \item $(\forall x,y \in \Z)(x^2 - y^2 \neq 10)$\\
+            Negation: $(\exists x,y \in \Z)(x^2 - y^2 = 10)$
+            \item $(\exists x \in \R)\big((x^3 + x + 1 = 0) \^ ((\forall y \in \R)(y^3 + y + 1 = 0) \implies (x = y))\big)$\\
+            Negation: $(\forall x \in \R)((x^3 + x + 1 \neq 0) \v ((\exists y \in \R)((y^3 + y + 1 = 0) \^ (x \neq y))))$
+            \item Without loss of generality: \\
+            $(\forall x,y \in \R)((x < y)\implies((\exists z \in \Q)(x < z < y)))$\\
+            Negation: $(\exists x,y \in \R)((x < y) \implies ((\forall z \in \Q)((z \leq x) \v (z \geq y))))$
+        \end{enumerate}
+    \item 
+        \begin{enumerate}
+            \item 
+                \begin{enumerate}
+                    \item Possibly True:\\ 
+                        True: $G(x,y): x + y = 7$\\
+                        False: $G(x,y): x + y = 8$
+                    \item Possibly True:\\
+                        True: $G(x,y): y = 3$\\
+                        False: $G(x,y): x = y$
+                    \item Certainly True:\\
+                        If there exists a $y$ that makes $G(x,y)$ true for all $x$, then there must exist a $y$ that makes $G(3,y)$ true. That value of $y$ is the solution.
+                    \item Certainly False:\\
+                        This is the negation of part(iii), so it is false.
+                    \item Possibly True:\\
+                        True: $G(x,y): x + y = 5$\\
+                        False: $G(x,y): y = 5$
+                \end{enumerate}
+            \item
+                $(X \^ \neg Y \^ \neg Z) \v (\neg X \^ Y \^ \neg Z) \v (\neg X \^ \neg Y \^ Z)$
+        \end{enumerate}
+    \item
+        \begin{enumerate}
+            \item True:\\
+            Both sides require that $P$ and $Q$ are true for all values of x.
+            \item False:\\
+            The left side requires that for every value of $x$, at least one of $P$ and $Q$, but the right side requires that at least one of $P$ and $Q$ is true for all values of $x$.\\
+            Counter Example: $P(x): x$ is even and $Q(x): x$ is odd. This satisfies the left side, but does not satisfy the right.
+            \item True:\\
+            Both sides require that there exists a value of $x$ that satisfies at least one of $P$ and $Q$.
+            \item False:\\
+            The left side requires that there exists a value of $x$ that satisfies \underline{both} $P$ and $Q$. The right side allows for 2 different values of $x$ to satisfy the 2 functions.\\
+            Counter Example: $P(x): x = 3$ and $Q(x): x = 4$. This satisfies the right side, but does not satisfy the left.
+        \end{enumerate}
+    \item
+        We proceed with proof by contradiction.\\
+        Assume that $2^\frac{1}{n}$ is rational for some integer $n \geq 3$. This implies that $2^\frac{1}{n}$ can be written as $\frac{x}{y}$ for some $x$ and $y$. In other words, $2^\frac{1}{n} = \frac{x}{y}$ for some $x$ and $y$. Multiplying by $y$ and raising both sides to the n\textsuperscript{th} power, we get $2y^n = x^n$, or $y^n + y^n = x^n$. By Fermat's Last Theorem, there are no integers $x$ and $y$ that satisfy this equation for $n \geq 3$. Thus, the original assumption must be false. \qed
+    \item
+        \begin{enumerate}
+            \item We will proceed with a direct proof.\\
+            For natural numbers $n$, $n$ being odd implies that it can be written in the form $2k + 1$ for some natural number k. Clearly, $n^2 + 3n$ is equal to $4k^2 + 10k + 4$. Each added term is divisible by 2, so by definition, $n^2 + 3n$ is even. \qed
+            \item We will proceed with proof by contraposition.\\
+            To prove the claim, it suffices to show that if $a < 17$ and $b < 3$, then $a + b < 20$. Clearly, this is true. Thus, by contraposition, the original claim is true.
+            \item We will proceed with proof by contradiction.\\
+            Assume that $r + 1$ is rational, and $r$ is irrational. This implies that $r + 1$ can be written in the form $\frac{x}{y}$, and $r$ cannot be. $r = r + 1 - 1 = \frac{x}{y} - 1 = \frac{x-y}{y}$. Since the values $x$ and $y$ are arbitrary, we can let $x-y = x_1$. Then $r = \frac{x_1}{y}$. This is in the form of a rational number, which contradicts our assumption, so our original assumption is wrong and $r+1$ must be irrational.\qed
+            \item We will proceed with proof by contradiction.\\
+            Assume that $10n^3 > n!$ for all natural numbers n. Let $n = 10$. Then we get that $10(10^3) > 10!$. Clearly, since $10!$ has the factors: $2, 3, 4, 5, 6, 7, 10$, $10!$ is necessarily greater than $(2*5) * (3*4) * (6*7) * 10$. Each of these 4 factors are greater than or equal to 10, so $10! > 10(10^3)$. This means the original assumption must be false. \qed
+            \item We will proceed with proof by contradiction.\\ Assume that there exists a natural number $a$ where $a^5$ is odd, but $a$ is even. If $a$ is even, by definition, it can be written in the form $2k$ for some natural number $k$. $a^5 = (2k)^5 = 32k^5$. Clearly, $a^5$ is even, which contradicts our assumption. Thus, $a$ must be odd if $a^5$ is odd. \qed
+        \end{enumerate}
+    \item
+        \begin{enumerate}
+            \item We will proceed with proof by induction.\\
+            \textit{Base Case}: $(n = 1)$: $1^3 - 1 = 0$. $0 | 3$. The base case holds.\\
+            \textit{Induction Hypothesis}: Assume there exists a natural number $k \geq 1$ such that $k^3 - k$ is divisible by 3.\\
+            \textit{Inductive Step}: $(k+1)^3 - (k+1) = k^3 + 3k^2 + 3k + 1 - k - 1 = k^3 + 3k^2 + 2k = k^3 - k + 3(k^2 + k)$. By the induction hypothesis, we have that $(k^3 - k) | 3$. To prove our claim, it suffices to show that $3(k^2 + k)$ divides 3. Clearly this is true.\\
+            By induction, the claim holds.\qed
+            \item We will proceed with proof by induction.\\
+            \textit{Base Case}: $(n = 1)$: $5^1 - 4(1) - 1 = 0$. $0 | 16$. The base case holds.\\
+            \textit{Induction Hypothesis}: Assume there exists a natural number $k$ such that $5^k - 4k - 1$ is divisible by 16.\\
+            \textit{Inductive Step}: $5\textsuperscript{k+1} - 4(k+1) - 1 = 5(5^k) - 4k - 5 = [4(5^k) - 4] + [5^k - 4k - 1]$. By the induction hypothesis, $5^k - 4k - 1$ is divisible by 16. To prove our claim, it suffices to show that $4(5^k) - 4$ is divisible by 16. When determining if a function $f(x)$ is divisible by a number $y$, adding a multiple of $y$ does not change the result. In other words, $f(x) + yk$ is divisible by $y$ iff $f(x)$ is divisible by $y$. Using this identity, we can say that if we prove $4(5^k) - 16k - 4$ is divisible by 16, then $4(5^k) -4$ must also be divisible. $4(5^k) - 16k - 4 = 4[5^k - 4k - 1]$ which is divisible by 16 according to the induction hypothesis.\\
+            By induction, the claim holds. \qed
+            \item To reword the question, we are looking for $x$ and $y$ such that $3x + 7y = n$ for $n \geq 12$.\\
+            We will proceed with proof by induction.\\
+            \textit{Base Case}: $(n=12)$: x = 4, y = 0. 3(4) + 7(0) = 12. The base case holds.\\
+            \textit{Induction Hypothesis}: Assume there exists $n$ and $m$ such that $3n + 7m = k$ for some $k \geq 12$.\\
+            \textit{Inductive Step}: To find a solution for $k+1$, we can break this into 2 cases:
+            \begin{itemize}
+                \item Case 1: $n \geq 2$: If there exists $n$ and $m$ such that $3n + 7m = k$ where $n \geq 2$, then we have $3(n-2) + 7(m+1) = k+1$.
+                \item Case 2: $n < 2$: Since we have $k \geq 12$, we know that if $n < 2$, then $m \geq 2$. Otherwise, if $n$ and $m$ are both less than 2, then the greatest value we can obtain is 10. Thus, we have $3(n+5) + 7(m-2) = k+1$.
+            \end{itemize}
+            We now have cases to find a solution for $k+1$.\\
+            By induction, the claim holds. \qed
+        \end{enumerate}
+    \item
+        We will proceed with proof by induction.\\
+        \textit{Base Case}: $(n=1)$: For $n = 1$, we are unable to split the stack, so the only score obtainable is 0. $\frac{1(1-1)}{2} = 0$. The base case holds.\\
+        \textit{Induction Hypothesis}: Assume for all $j$ where $1 \leq j \leq k$, playing this game with a stack of $j$ many coins yields a score of $\frac{(j)(j-1)}{2}$ for any series of valid moves.\\
+        \textit{Inductive Step}: To prove the claim, it suffices to show that the claim holds for $k+1$. All valid moves for a stack of $k+1$ many coins results in 2 stacks of $k - n + 1$ and $n$ for $1 \leq n \leq k$. The resulting score of this move is equal to:
+        \begin{align*}
+            (k-n+1)n + S(k-n+1) + S(n)
+        \end{align*}
+        where $S(x)$ is the score obtained from a stack of $x$ coins. Since $n$ is bounded, the induction hypothesis gives us an equation for $S(k-n+1)$ and $S(n)$. The resulting score can be simplified as:
+        \begin{align*}
+            (k-n+1)n + \frac{(k-n+1)(k-n)}{2} + \frac{(n)(n-1)}{2}
+        \end{align*}
+        With simple algebra, this can be simplified into:
+        \begin{align*}
+            \frac{(k+1)(k)}{2}
+        \end{align*}
+        By induction, the claim holds.
+    \item
+        \begin{enumerate}
+            \item The largest number of leaves that a tree with $n$ vertices can have is $n-1$. This tree will have 1 vertex with degree $n-1$ and $n-1$ vertices with degree 1 ($n-1$ leaves). In order for a tree with $n$ vertices to have greater than $n-1$ leaves, all its vertices must be leaves. Clearly, this is impossible because a tree, by definition, must have $n - 1$ edges. If all $n$ vertices were leaves (i.e. they have degree 1), then there would be $n$ edges.
+            \item We will proceed with proof by induction.\\
+            \textit{Base Case}: $(n=2)$: The only constructible tree with 2 vertices is when the 2 vertices are connected with an edge. Each of the vertices is a leaf. The base case holds.\\
+            \textit{Induction Hypothesis}: Assume there exists $k$ such that a tree with $k$ vertices must have at least 2 leaves.\\
+            \textit{Inductive Step}: If we evaluate the tree resulting from the addition of a vertex to the tree specified in the induction hypothesis, there are two cases:
+            \begin{itemize}
+                \item Case 1: The vertex is added to a leaf.\\
+                In this case, since the leaf originally had degree 1, the addition of the vertex will make it degree 2, and no longer a leaf. However, the added vertex will have degree 1 and will be a leaf. The net change in the number of leaves in the tree is 0.
+                \item Case 2: The vertex is added to a non-leaf vertex in the tree.\\
+                In this case, the non-leaf vertex in the tree still will not be a leaf after the addition. The added vertex, however, will have degree 1 and will be a leaf. The net change in the number of leaves in the tree is 1.
+            \end{itemize}
+            In both cases, there is a non-negative change in the number of leaves added to the tree. By induction, the claim holds.
+        \end{enumerate}
+        
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70 sp19}}
+\author{\large Taught by Rao, Ayazifar\\
+Discussion 00a by William Wang}
+\date{June 5, 2019}
+
+\begin{document}
+
+\maketitle
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item We proceed with proof by induction. \\
+        \textit{Base Case} (n = 3): $2^3 > 2(3) + 1$. The base case holds.\\
+        \textit{Induction Hypothesis}: Assume that $2^k > 2k + 1$ for some $k > 2$.\\
+        \textit{Inductive Step}: By the induction hypothesis, we have that \\$2\textsuperscript{k+1} > 2(k+1) + 1$. To prove our claim, it suffices to show that $2^k \geq 2$.\\
+        By the principle of mathematical induction, the claim holds.
+        \item We proceed with proof by induction.\\
+        \textit{Base Case} (n = 1): $\frac{(1)(1+1)(2+1)}{6} = 1^2 = 1$. The base case holds.\\
+        \textit{Induction Hypothesis}: Assume that $1^2 + 2^2 + ... + k^2 = \frac{(k)(k+1)(2k+1)}{6}$ for some $k \in \Z^+$.\\
+        \textit{Inductive Step}: By the induction hypothesis, we have that $1^2 + 2^2 + ... + k^2 + (k+1)^2 = \frac{(k)(k+1)(2k+1)}{6} + (k+1)^2 = \frac{(k+1)(k+2)(2k+3)}{6}$.\\
+        By the principle of mathematical induction, the claim holds.
+        \item We proceed with proof by induction.\\
+        \textit{Base Case} (n = 1): $(\frac{5}{4})(8) + 3^2 = 19$. The base case holds.\\
+        \textit{Induction Hypothesis}: Assume that $(\frac{5}{4})(8^k) + 3\textsuperscript{3k - 1} \equiv 0\mod{19}$ for some $k \in \N^+$.\\
+        \textit{Inductive Step}: By the induction hypothesis, we have that $(\frac{5}{4})(8\textsuperscript{k+1}) + 3\textsuperscript{3(k+1) - 1} = (\frac{5}{4})(8)(8^k) + (27)(3\textsuperscript{3k -1}) = 8(\textit{Base Case}) + 19(3\textsuperscript{3k-1}) \equiv 0\mod{19}$.\\ 
+        By the principle of mathematical induction, the claim holds. 
+    \end{enumerate}
+    \item
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+\end{enumerate}
+\newpage
+
+
+\end{document}

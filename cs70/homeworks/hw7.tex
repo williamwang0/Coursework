@@ -1,0 +1,180 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70}}
+\author{\large Taught by Hulett, Yang\\
+Homework 7 by William Wang}
+\date{August 10, 2019}
+
+\begin{document}
+
+\maketitle
+\newpage
+Sundry: I worked on this homework by myself.\\
+\begin{enumerate}
+   \item
+        \begin{enumerate}
+            \item Since Y and X are both exponential distributions, we get: 
+            \begin{align*}
+                \P[Y > y] &= \int_y^\infty \mu e^{-\mu x}dx = e^{-\mu y}\\
+                \P[Y < X | X = x] &= 1 - e^{-\mu x} \\
+                \P[Y < X] &= \int_0^\infty 1 - e^{-\mu x} f_X(x)dx\\
+                &= \E[1 - e^{-\mu X}]\\
+                &= 1 - e^{-\frac{\mu}{\lambda}}
+            \end{align*}
+            \item $D$ is simply the same: Expo($\lambda$). This is because of the memorylessness property of the exponential distribution.
+            \item We have $Z = min(X, Y)$. The expected value of Z is:
+            \begin{align*}
+                \E[Z] &= \int_0^\infty \P[min \geq t] dt\\
+                &= \int_0^\infty e^{-\lambda t} + e^{-\mu t} - e^{-(\lambda + \mu)t}\\
+                &= \frac{1}{\lambda} + \frac{1}{\mu} - \frac{1}{\lambda + \mu}
+            \end{align*}
+            \item Let $T = X_1 + X_2$. The CDF of $T$ is given by:
+            \begin{align*}
+                &\int_0^t \P[T<t|X_1 = x] * \P[X_1 = x]dt\\
+                = &\int_0^t (1-e^{-\lambda (t-x)})\lambda e^{-\lambda x}dx
+            \end{align*}
+            After differentiating the CDF, we get $e^{-\lambda t}$ by the fundamental theorem of calculus.
+        \end{enumerate}
+   \item
+        \begin{enumerate}
+            \item This problem is exactly the same as 1(c)???: $\frac{1}{\lambda_X} + \frac{1}{\lambda_Y} - \frac{1}{\lambda_X + \lambda_Y}$
+            \item We get the following:
+                \begin{align*}
+                    \P[X \leq Y] &= \int_0^\infty \P[part(a)] dt\\
+                \end{align*}
+            To show that the two events are independent, $\P[A \^ B] = \P[A] * \P[B]$. This is not the case?? I believe part(a) is incorrect...
+            \item By the linearity of expectation, we get:
+                \begin{align*}
+                    \P[W > t | X \leq Y] &= \P[Y-X > t | X \leq Y] \\
+                    &= 1/2
+                \end{align*}
+                by symmetry.
+            \item Not sure how part(c) allows for the computation of $\P[W>t]$, but if they are independent, then $\P[A \^ B] = \P[A] * \P[B]$.
+            \item Since U and W are both independent of the event: $X \leq Y$, we have that they are independent from each other??
+        \end{enumerate}
+   \item
+        \begin{enumerate}
+            \item Since $X_a, X_j$ independent, we have that their join distribution is:
+                \begin{align*}
+                    f(x,y) &= f(x)f(y)\\
+                    &= (1/2\pi) e^{-x^2 + y^2/2}
+                \end{align*}
+            Then, from the hint, we get:
+                \begin{align*}
+                    P(r_a \leq t) &= \int_{x^2 + y^2 < t} (1/2\pi)e^{-x^2+y^2/2} dxdy\\
+                    &= -e^{-r^2/2}|_{r=0}^{\sqrt{t}}\\
+                    &= 1 - e^{-t/2}
+                \end{align*}
+            \item
+            CDF of $r_j$ is the area of the inner circle over the area of the entire circle: $k/9$. Then, the pdf is simply: $f_{rj}(x) = (1/9)I(x\leq9)$
+            \item
+            $\int_{t=0}^{t=9} \P[r_a \leq t] f(t) dt = (7/9) + (2/9)e^{-9/2}$
+        \end{enumerate}
+   \item
+        \begin{enumerate}
+            \item We have the following relationship:
+                \begin{align*}
+                    T_0 &= 1 + \frac{1}{2}T_1 + \frac{1}{2}T_2 \\
+                    T_1 &= 1 + T_0 \\
+                    T_2 &= 1 + \frac{1}{4}T_0 + \frac{1}{4}T_1 + \frac{1}{4}T_3 + \frac{1}{4}T_4 \\
+                    T_3 &= 0 \\
+                    T_4 &= 1 + T_2
+                \end{align*}
+                With algebra, we get that $\E[T_0] = 59/4 > 12$. Therefore, by randomly taking floors, we can expect that we will not reach the classroom in time.
+            \item This time, we have the following relationship:
+                \begin{align*}
+                    T_0 &= 1 + \frac{1}{3}T_1 + \frac{2}{3}T_2 \\
+                    T_1 &= 1 + T_0 \\
+                    T_2 &= 1 + \frac{1}{15}T_0 + \frac{2}{15}T_1 + \frac{4}{15}T_3 + \frac{8}{15}T_4 \\
+                    T_3 &= 0 \\
+                    T_4 &= 1 + T_2
+                \end{align*}
+                With algebra, we get that $\E[T_0] = 78/8 < 12$. Therefore, with this scheme, we can expect that we will reach the classroom in time.
+        \end{enumerate}
+    \item The process can be modeled with a Markov chain that has the transition matrix:
+        \begin{align*}
+            P = \quad 
+                \begin{bmatrix}
+                (1-b) & b \\
+                r & (1-r)
+                \end{bmatrix}
+        \end{align*}
+        The value that this converges to can be solved by solving the following equation:
+        \begin{align*}
+                \begin{bmatrix}
+                \pi_1 & \pi_2
+                \end{bmatrix}
+                \begin{bmatrix}
+                (1-b) & b \\
+                r & (1-r)
+                \end{bmatrix}
+                = 
+                \begin{bmatrix}
+                \pi_1 & \pi_2
+                \end{bmatrix}
+        \end{align*}
+        With algebra, we get:
+        \begin{align*}
+            \begin{bmatrix}
+                \pi_1 & \pi_2
+            \end{bmatrix}
+            =
+            \begin{bmatrix}
+                \frac{r}{b+r} & \frac{b}{b+r}
+            \end{bmatrix}
+        \end{align*}
+        In order for the values to actually converge, we must have that $b,r \in (0,1)$. $b$ and $r$ cannot take on the values 0 or 1, otherwise the Markov chain will be reducible or periodic respectively, and thus the probability will not converge.
+    \item
+        The average number of heads obtained is the result of S in the following model:
+        \begin{align*}
+            S &= \frac{1}{2}H + \frac{1}{2}T_1 \\
+            H &= 1 + \frac{1}{2}H + \frac{1}{2}T_1 \\
+            T_1 &= \frac{1}{2}H + \frac{1}{2}T_2 \\
+            T_2 &= \frac{1}{2}H + \frac{1}{2}E \\
+            E &= 0
+        \end{align*}
+        With algebra, we get that $\E[S] = 7$. We are expected to see 7 heads before obtaining $TTT$.
+\end{enumerate}
+\end{document}

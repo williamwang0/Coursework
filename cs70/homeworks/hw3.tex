@@ -1,0 +1,114 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 70}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 70}}
+\author{\large Taught by Hulett, Yang\\
+Homework 3 by William Wang}
+\date{July 14, 2019}
+
+\begin{document}
+
+\maketitle
+\newpage
+Sundry: I worked on this homework by myself.\\
+\begin{enumerate}
+    \item
+        \begin{enumerate}
+            \item Using Fermat's Little Theorem, we have that $a^{p-1} \equiv 1$ (mod p). In other words, $a^{p-1} = kp + 1$ for some integer k. Then, $a^{p(p-1)} = (kp + 1)^p = p^2(j) + 1$ where j is some integer expression that can be obtained by expanding $(kp + 1)^p$. Clearly, this leaves a remainder of 1 in modulo $p^2$.
+            \item By definition of d and e, we have that $ed = kp(p-1)q(q-1) + 1$ for some integer $k$. Then, $x^{ed} \equiv x^{kp(p-1)q(q-1)} * x$ (mod $p^2q^2$). By CRT and the property shown in part (a), we have that $x^{kp(p-1)q(q-1)} \equiv 1$ (mod $p^2q^2)$, so $x^{ed} \equiv 1 * x \equiv x$ (mod $p^2q^2$).
+        \end{enumerate}
+    \item
+        It is trivial to factor N into $p$ and $q$ if $(p-1)(q-1)$ is known. Observe that $(p-1)(q-1) = pq - (p+q) + 1 = N - (p+q) + 1$\\ So $(p+q) = pq - (p-1)(q-1) + 1$ which consists of terms that we know. Consider the polynomial $f(x) = (x-p)(x-q) = x^2 - (p+q)x + pq$. If we can construct $f$, then Wolfram can find the roots and return $p$ and $q$. We have shown that if we know $(p-1)(q-1)$, then we know $p + q$ and $pq$ is public knowledge. Thus, knowing the value of $(p-1)(q-1)$ makes finding $p$ and $q$ trivial.
+    \item
+        \begin{enumerate}
+            \item $p(x) = y_0$.
+            \item $a_1 = \frac{y_1 - y_0}{x_1 - x_0}$
+            \item $a_2 = \frac{y_2 - y_1 - y_0}{(x_2-x_0) * (x_2 - x_1)}$
+            \item $a_i = \frac{y_i - \sum_{k=0}^{k-1} y_k}{\prod_{j=0}^{j-1} x_i - x_j}$
+        \end{enumerate}
+    \item
+        \begin{enumerate}
+            \item Use the first 5 bits from the message to interpolate a degree 4 polynomial $p(x)$. Use 10 points from $p$ and send those through Channel A. Use the last 3 bits from the message to do the same with a degree 2 polynomial and channel B.
+            \item The value (2,3) is wrong because the point makes the polynomial degree $\geq 4$. The polynomial should only be degree 2 so you should reinterpolate the polynomial using all the other points.
+            \item Bob can still figure out the message. Since Bob knows the polynomial should be degree 2, he can see that the point at $x = 2$ is wrong and use interpolation to recover the point at $x=2$.
+            \item Alice has the following set of points: (0,-3), (1,-1), (2,1), (3,3)\\
+            Bob has the following set of points: (0,-3), (1,-1), (2,$x$), (3,-3), (4,5)
+        \end{enumerate}
+    \item
+        \begin{enumerate}
+            \item $P(0) = 4, P(1) = 3, P(2) = 2$\\
+            Using Lagrange interpolation,\\
+            $\delta_0(x) = \frac{(x-1)(x-2)}{(0-1)(0-2)} = 3(x-1)(x-2)$ (mod 5)\\
+            $\delta_1(x) = \frac{(x)(x-2)}{(1-0)(1-2)} = 4(x)(x-2)$ (mod 5)\\
+            $\delta_2(x) = \frac{(x)(x-1)}{(2-0)(2-1)} = 3(x)(x-1)$ (mod 5)\\
+            $P(x) = 4(3(x-1)(x-2)) + 3(4x(x-2)) + 2(3x(x-1))$ (mod 5)\\
+            $P(x) = -x + 4$ (mod 5)\\
+            $(c_0, c_1, c_2, c_3, c_4) = (4,3,2,1,0)$
+            \item
+            corrupt = (0,3,2,1,0)\\
+            $E(x) = x$\\
+            $Q(x) = ax^2 + bx + c$\\
+            $i=0: c = 0$ (mod 5)\\
+            $i=1: a+b+c = 3$ (mod 5)\\
+            $i=2: 4a + 2b + c = 4$ (mod 5)\\
+            $i=3: 9a + 3b + c = 3$ (mod 5)\\
+            $i=4: 16a + 4b + c = 0$ (mod 5)
+            \item
+            Recover original message using $P = \frac{Q}{E}$\\
+            $P(x) = \frac{-x^2 + 4x}{x} = 4-x$\\
+            Plugging in $x = 0,1,2$ yields $P(x)$
+        \end{enumerate}
+    \item
+        \begin{enumerate}
+            \item We proceed with a direct proof\\
+            If $f$ is countable then we can list $f_1,f_2,...$\\
+            $F(1) = f_1(1) + 1$\\
+            $\forall n \in \N, n \geq 2 \implies F(n) = F(n-1) + f_n(n) + 1$\\
+            F is increasing. The set of increasing $f_n$ is uncountable.
+            \item $f(n) = i$ is the set for all $i$. We have $f(1) \geq f(2) \geq f(3) ... $. The $f(i)$ eventually tend to a constant in the following manner: $\forall n \geq n_0 \implies f(n) = i$. $f$ is the a set that is decreasing so we have the mapping of $f \in F$
+            \item  This is necessarily countable. If we choose a point in each disk that is a rational number, we get a set that can be represented with $\Q x \Q$. The disks are disjoint so all the numbers are unique. Therefore, we have a one-to-one association from the disk to the countable set and it is necessarily countable.
+            \item This is uncountable. Evaluate the set of all circles centered at the point (0, 0). $\forall r \in \R$, we can construct a circle of radius r. None of these circles overlap so there is a one-to-one mapping of each circle to a value in $\R$ which is an uncountable set.
+        \end{enumerate}
+\end{enumerate}
+\end{document}
