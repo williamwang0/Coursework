@@ -1,0 +1,165 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=4.0cm, right=4.0cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{tikz-cd}
+\usepackage{ytableau}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\f}[1]{\text{#1}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\renewcommand{\^}{\wedge}
+\renewcommand{\v}{\vee}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\today}
+\chead{CS 170}
+\rhead{William Wang}
+\cfoot{\thepage}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+% \setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+
+\title{\textbf{CS 170}}
+\author{\textit{HW 1} by William Wang}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newpage
+\section{1. Instructions}
+No work necessary
+\newpage
+\section{2. Study Group}
+Abhinav Ayalur \# 3033552084 
+\newpage
+\section{3. Course Policies}
+\begin{enumerate}[a)]
+    \item Midterm 1: 9/30, 8 - 10pm\\
+    Midterm 2: 11/7, 8 - 10pm\\
+    Final: 12/19, 8 - 11am
+    \item You can't submit it anymore. That's why there are homework drops!
+    \item Piazza is the main source for communication
+    \item I have read and understood the course policies, homework FAQs and Piazza etiquette. - William Wang
+\end{enumerate}
+\newpage
+\section{4. Understanding Academic Dishonesty}
+\begin{enumerate}[a)]
+    \item NOT OK
+    \item NOT OK
+    \item NOT OK
+    \item OK
+\end{enumerate}
+\newpage
+\section{5. Asymptotic Complexity Comparisons}
+\begin{enumerate} [a)]
+    \item $f_3\\f_7\\f_2\\f_5\\f_4\\f_9\\f_8\\f_6\\f_1$
+    \item
+        \begin{enumerate}[i)]
+            \item $f = \Theta(g)$\\
+            Justification: $\log_a(b) = \frac{\log_x(b)}{\log_x(a)}$. Then, we have $f = \log_3(n) = \frac{\log_4(n)}{\log_4(3)} = \Theta(\log_4(n)) = \Theta(g)$.
+            \item $f = O(g)$\\
+            Justification: $n\log(n^4) = 4n\log(n) < 3n^2\log(n) = n^2\log(n^3)$. Since $f < g, g$ is an upper bound for $f$.
+            \item $f = \Omega(g)$\\
+            Justification: Take the log of both sides:
+            \begin{align*}
+                \log(\sqrt{n}) &= \frac{1}{2}\log(n)\\
+                \log((\log(n))^3) &= 3\log(\log(n))\\
+                \frac{1}{2}\log(n) &> 3\log(\log(n))
+            \end{align*}
+            Since $f > g, g$ is a lower bound for $f$.
+            \item $f = \Theta(g)$\\
+            Justification: $\log(n) > 1$ as $n \to \infty$. Then $n + \log(n) < n + (\log(n))^2$. $n$ dominates, so $f$ and $g$ are equal asymptotically
+        \end{enumerate}
+\end{enumerate}
+\newpage
+\section{6. Computing Factorials}
+\begin{enumerate}[a)]
+    \item For any N, we have $\log(N)$ bits. By the logarithm rule:
+    \begin{align*}
+        \log(ab) = \log(a) + \log(b)
+    \end{align*}
+    we get the following:
+    \begin{align*}
+        \log(N!) &= \sum_{k=1}^{N}\log(k)\\
+        &\approx \log(\sqrt{2 \pi N}(\frac{N}{e})^N)\\
+        &= O(\log(\sqrt{N} * N^N)\\
+        &= O((N+\frac{1}{2})\log(N))\\
+        &= O(N\log(N))
+    \end{align*}
+    \item A naive algorithm is to multiple the values in increasing order. Specifically, we get the following sequence of operations:
+    \begin{align*}
+        (((1\cdot1)\cdot2)\cdot3)\cdot4)...
+    \end{align*}
+    At every step of the algorithm we multiply $k$ and the previous running total. This means that at every step, we have $\log(k) \cdot k\log(k) = k(\log(k))^2$ work. Then the total amount of work is:
+    \begin{align*}
+        \sum_{k=1}^{N} k(\log(k))^2
+    \end{align*}
+    To bound this, we have $N$ terms, and the max of the terms is $N(\log(N))^2$. Then, a nice upper bound for the runtime is $O(N^2\log(N)^2)$
+\end{enumerate}
+\newpage
+\section{7. Recurrence Relations}
+\begin{enumerate} [a)]
+    \item $T(n) = 4T(n/2) + 42n$\\
+    At every step, we have $42n$ work. Asymptotically, this is equivalent to $n$ work. Evaluate the work after $k$ steps. We have $4^k \cdot \frac{n}{2^k} = 2^kn$ work at the $k^{th}$ step. The total amount of work is the following:
+    \begin{align*}
+        \sum_{k=0}^{\log(n)}2^kn &= n\sum_{k=0}^{\log(n)}2^k\\
+        &= n(2n-1)\\
+        &= O(n^2)
+    \end{align*}
+    \item $T(n) = 4T(n/3) + n^2$\\
+    At every step, we have $n^2$ work. Evaluate the work after $k$ steps. We have $4^k \cdot \frac{n^2}{3^k} = (\frac{4}{3})^kn^2$ work at the $k^{th}$ step. The total amount of work is the following (Note that the log is in base 3):
+    \begin{align*}
+        \sum_{k=0}^{\log(n)}(\frac{4}{3})^kn^2 &= n^2\sum_{k=0}^{\log(n)}(\frac{4}{3})^k\\
+        &= O(n^2 * (\frac{4}{3})^{\log(n)})\\
+        &= O(n^2 * (\frac{4^{\log(n)}}{3^{\log(n)}}))\\
+        &= O(n^2 * (\frac{4^{\log(n)}}{n}))\\
+        &= O(n^2 * (\frac{n^{\log(4)}}{n}))\\
+        &= O(n^2)
+    \end{align*}
+    \item $T(n) = T(\sqrt{n}) + 1$\\
+    At every step, we have a single unit of work. If $n$ is rooted at every step, we have that the exponent gets halved every time. Thus, we get that the total number of steps is equal to $\log(\log(n))$. Since there is only a single unit of work per step, we have the total amount of work = $O(\log(\log(n))$
+\end{enumerate}
+\newpage
+\section{8. Sorted Array}
+\begin{verbatim}
+    def indexIsNum(A):
+        begin = 0
+        end = len(A)
+        i = len(A) // 2 #middle of A
+        while i is not begin or end:
+            if A[i] == i:
+                return True
+            elif A[i] < i:
+                i = (i+end) // 2 #middle of i and end
+                begin = i
+            else:
+                i = i // 2 #middle of begin and i
+                end = i
+        return False
+\end{verbatim}
+The algorithm given above runs in $O(\log(n))$ because it is simply a binary search run on a sorted array. The algorithm works because if $A[i] < i$, we are \textit{guaranteed} that all the elements of $A$ before index $i$ must be less than their respective index. This holds because $A$ is an array of distinct integers. Thus, the amount of items that we have to search through is halved at every step and so the total runtime will be $\log(n)$.
+\end{document}
